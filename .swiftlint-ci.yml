@@ -1,0 +1,23 @@
+# By default, SwiftLint uses a set of sensible default rules you can adjust:
+disabled_rules: # rule identifiers turned on by default to exclude from running
+ - nesting
+ - trailing_whitespace
+# Case-sensitive paths to include during linting. Directory paths supplied on the
+# command line will be ignored.
+included: 
+  - Sources
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length:
+  warning: 160
+  ignores_comments: true
+  ignores_interpolated_strings: true
+
+file_length:
+  warning: 600
+
+function_body_length:
+  warning: 60
+
+cyclomatic_complexity:
+  ignores_case_statements: true

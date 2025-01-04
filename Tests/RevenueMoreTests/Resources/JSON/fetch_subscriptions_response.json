@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "status": "success",
+    "code": 200,
+    "message": "OK",
+    "path": "/api/v1/subscriptions?pn=1&ps=10&ty=ac",
+    "language": "en",
+    "version": "v1.0.0",
+    "timestamp": 1732872071
+  },
+  "pagination": {
+    "pn": 1,
+    "ps": 10
+  },
+  "data": {
+    "sbs": [
+      {
+        "_id": "6698f8f65f5eb7ecec73bcbd",
+        "ars": 1,
+        "pe": 9990,
+        "pid": "1m_rm_access",
+        "ti": "2000000660433874",
+        "cy": "TRY",
+        "pd": 1721301272000,
+        "qy": 1,
+        "rssd": 1721299821000,
+        "rd": 1721301452000,
+        "ss": 1,
+        "ed": 1920888820000
+      }
+    ]
+  },
+  "errors": {}
+}

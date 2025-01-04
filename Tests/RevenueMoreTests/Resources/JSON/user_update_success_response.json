@@ -1,0 +1,18 @@
+{
+  "errors" : {
+
+  },
+  "meta" : {
+    "status" : "success",
+    "code" : 200,
+    "message" : "OK",
+    "language" : "en",
+    "version" : "v1.0.0",
+    "path" : "\/api\/v1\/users",
+    "timestamp" : 1732800010
+  },
+  "pagination" : null,
+  "data" : {
+    "mr" : "anonymous-d61313ebceff442392bf470cccc2ce71"
+  }
+}

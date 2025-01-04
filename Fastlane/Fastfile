@@ -1,0 +1,55 @@
+fastlane_version '2.157'
+default_platform :ios
+
+desc "Setup development environment"
+lane :setup_dev do |options|
+  begin
+    sh("brew install swiftlint")
+  rescue => exception
+    UI.error("❌ Please install homebrew and then re-run this lane: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"")
+    raise exception
+  end
+end
+
+
+platform :ios do
+
+    desc 'Release'
+    lane :release do
+        lint
+        scan()
+    end 
+
+    desc 'Builds project and executes unit tests'
+    lane :build_unit_test do
+        scan()
+    end
+
+    desc 'Linting of the code'
+    lane :lint do
+        swiftlint(
+            mode: :lint,                            # SwiftLint mode: :lint (default) or :autocorrect
+            config_file: ".swiftlint-ci.yml",       # The path of the configuration file (optional)
+            quiet: true,                            # Don't print status logs like 'Linting ' & 'Done linting' (Default: false)
+            raise_if_swiftlint_error: true,         # Allow fastlane to raise an error if swiftlint fails
+            strict: true                            # Fail in warnings
+        )
+
+    end
+
+    desc 'Creating document' 
+    lane :document do
+      ensure_git_status_clean
+      ensure_git_branch(branch: "master")
+      git_pull
+      jazzy config: "./fastlane/jazzy.yaml"      # The path of the configuration file (optional)
+      git_add(path: "Fastlane/Documantation")    # The path of the documantation file (optional)
+      git_commit(path: "Fastlane/Documantation", message: "Update documentation")
+    end
+
+    desc 'Check branch name'
+    lane :check_branch_name do
+      ensure_git_branch(branch: '^\d+-ios(-[a-z]+)+$')
+    end
+
+end

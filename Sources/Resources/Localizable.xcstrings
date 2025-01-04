@@ -1,0 +1,975 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "error.bad_url.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bad URL."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hatalı adres."
+          }
+        }
+      }
+    },
+    "error.bad_url.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bad or invalid URL was caught."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hatalı veya geçersiz adres."
+          }
+        }
+      }
+    },
+    "error.bad_url.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen support@revenuemore.com ile iletişime geçin."
+          }
+        }
+      }
+    },
+    "error.fetch_entitlements.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There may be a problem with your RevenueMore account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RevenueMore hesabınızda bir sorun olabilir."
+          }
+        }
+      }
+    },
+    "error.fetch_entitlements.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check error message and your RevenueMore dahsboard. If you can't find problem, please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata mesajını ve RevenueMore panonuzu kontrol edin. Sorunu bulamazsanız lütfen support@revenuemore.com ile iletişime geçin."
+          }
+        }
+      }
+    },
+    "error.fetch_paywalls.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by our paywall service."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata ödeme duvarı servisimiz tarafından tetiklendi."
+          }
+        }
+      }
+    },
+    "error.fetch_paywalls.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by our paywall service. Please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata ödeme duvarı hizmetimiz tarafından tetiklendi. Lütfen support@revenuemore.com ile iletişime geçin"
+          }
+        }
+      }
+    },
+    "error.fetch_product_failed.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When fetching products, an error occurred."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürünler getirilirken bir hata oluştu."
+          }
+        }
+      }
+    },
+    "error.fetch_product_failed.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by Apple. Please check product ids in offerings."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata Apple tarafından tetiklendi. Lütfen tekliflerdeki ürün kimliklerini kontrol edin."
+          }
+        }
+      }
+    },
+    "error.invalid_receipt.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receipt data not found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receipt data bulunamadı."
+          }
+        }
+      }
+    },
+    "error.invalid_receipt.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You may be working in a simulator."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simülatörde çalışıyor olabilirsiniz."
+          }
+        }
+      }
+    },
+    "error.invalid_receipt.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try working with the physical device."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiziksel cihaz ile çalışmayı deneyiniz."
+          }
+        }
+      }
+    },
+    "error.listen_payment_failed.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by Apple. The user may have completed the payment process faliure."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata Apple tarafından tetiklendi. Kullanıcı ödeme işlemini tamamlamış olabilir."
+          }
+        }
+      }
+    },
+    "error.listen_payment_failed.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can check your Apple account or environment (Production/Sandbox)."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple hesabınızı veya ortamınızı (Üretim/Sandbox) kontrol edebilirsiniz."
+          }
+        }
+      }
+    },
+    "error.not_found_offering.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No offerings were found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiçbir teklif bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_offering.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There isn't an offering in your RevenueMore account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RevenueMore hesabınızda bir teklif bulunmuyor."
+          }
+        }
+      }
+    },
+    "error.not_found_offering.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You need to add offering to your RevenueMore account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teklifinizi RevenueMore hesabınıza eklemeniz gerekiyor."
+          }
+        }
+      }
+    },
+    "error.not_found_product_ids.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No product identifiers were found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürün tanımlayıcısı bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_product_ids.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No product IDs were found in offerings."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekliflerde ürün kimliği bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_product_ids.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your product ids in offerings."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekliflerinizdeki ürün kimliklerini kontrol edin."
+          }
+        }
+      }
+    },
+    "error.not_found_product.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No products were found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürün bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_product.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There isn't a product in your ReveneuMore account or Apple Store Connect account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ReveneuMore hesabınızda veya Apple Store Connect hesabınızda ürün bulunmamaktadır."
+          }
+        }
+      }
+    },
+    "error.not_found_product.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your products in your RevenueMore account or Apple Store Connect account. If you have added products, please let check your product IDs in your RevenueMore account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürünlerinizi RevenueMore hesabınızda veya Apple Store Connect hesabınızda kontrol edin. Ürün eklediyseniz lütfen RevenueMore hesabınızdaki ürün kimliklerinizi kontrol edin."
+          }
+        }
+      }
+    },
+    "error.not_found_store_product.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No products were found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürün bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_store_product.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There isn't a store product in your Apple Store Connect account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Store Connect hesabınızda mağaza ürünü bulunmuyor."
+          }
+        }
+      }
+    },
+    "error.not_found_store_product.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your products in your RevenueMore account or Apple Store Connect account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürünlerinizi RevenueMore hesabınızdan veya Apple Store Connect hesabınızdan kontrol edin."
+          }
+        }
+      }
+    },
+    "error.not_found_window_scene.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not found window scene."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pencere sahnesi bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_window_scene.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No window scene was found."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pencere sahnesi bulunamadı."
+          }
+        }
+      }
+    },
+    "error.not_found_window_scene.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error caused in your App. Check need to check your window scene."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata Uygulamanızda oluştu. Pencere sahnenizi kontrol etmeniz gerekiyor."
+          }
+        }
+      }
+    },
+    "error.not_initialized_store_kit_manager.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error is caused by our developers."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata geliştiricilerimizden kaynaklanmaktadır."
+          }
+        }
+      }
+    },
+    "error.not_initialized_store_kit_manager.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by our sdk. Please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata sdk'mız tarafından tetiklendi. Lütfen support@revenuemore.com ile iletişime geçin."
+          }
+        }
+      }
+    },
+    "error.not_initialized_store_kit1_manager.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StoreKit1 weren't initialized."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StoreKit1 başlatılmadı."
+          }
+        }
+      }
+    },
+    "error.not_initialized_store_kit2_manager.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StoreKit2 weren't initialized."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StoreKit2 başlatılmadı."
+          }
+        }
+      }
+    },
+    "error.not_show_manage_subscriptions_without_message.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not shown manage subscriptions view."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonelikleri yönetme görünümü gösterilmiyor."
+          }
+        }
+      }
+    },
+    "error.not_show_manage_subscriptions.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by Apple. The sheet displays the customer’s currently active subscription for your app and the options to view, upgrade, downgrade, or cancel their subscription."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata Apple tarafından tetiklendi. Sayfa, müşterinin uygulamanız için şu anda etkin olan aboneliğini ve aboneliklerini görüntüleme, yükseltme, düşürme veya iptal etme seçeneklerini görüntüler."
+          }
+        }
+      }
+    },
+    "error.not_show_manage_subscriptions.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must have an active subscription."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktif bir aboneliğiniz olması gerekmektedir."
+          }
+        }
+      }
+    },
+    "error.payment_completed_with_failure.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There may be a problem with your RevenueMore account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RevenueMore hesabınızda bir sorun olabilir."
+          }
+        }
+      }
+    },
+    "error.payment_completed_with_failure.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check error message and your RevenueMore dahsboard. If you can't find problem, please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata mesajını ve RevenueMore panonuzu kontrol edin. Sorunu bulamazsanız lütfen support@revenuemore.com ile iletişime geçin"
+          }
+        }
+      }
+    },
+    "error.purchase_canceled_by_user.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User Cancelled."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı İptal Etti."
+          }
+        }
+      }
+    },
+    "error.purchase_canceled_by_user.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User have canceled the payment process."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı ödeme işlemini iptal etti."
+          }
+        }
+      }
+    },
+    "error.purchase_canceled_by_user.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User have canceled the payment process."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı ödeme işlemini iptal etti."
+          }
+        }
+      }
+    },
+    "error.purchase_failed_without_message.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to purchase the product."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürün satın alınamadı."
+          }
+        }
+      }
+    },
+    "error.purchase_is_pending.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaction waiting on SCA (Strong Customer Authentication) or approval from Ask to Buy."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlem SCA (Güçlü Müşteri Kimlik Doğrulaması) veya Ask to Buy onayı bekliyor."
+          }
+        }
+      }
+    },
+    "error.purchase_is_pending.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaction waiting on SCA (Strong Customer Authentication) or approval from Ask to Buy"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlem SCA'da (Güçlü Müşteri Kimlik Doğrulaması) veya Satın Alma Talebi'nden onay bekliyor."
+          }
+        }
+      }
+    },
+    "error.purchase_is_pending.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The payment is pending. Maybe you have already purchased the subscription."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödeme bekleniyor. Belki aboneliği zaten satın aldınız."
+          }
+        }
+      }
+    },
+    "error.purhase_failed_without_message.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to purchase the product."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ürün satın alınamadı."
+          }
+        }
+      }
+    },
+    "error.purhase_failed_without_message.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can check your Apple account or environment (Production/Sandbox)."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple hesabınızı veya ortamınızı (Üretim/Sandbox) kontrol edebilirsiniz."
+          }
+        }
+      }
+    },
+    "error.restore_payment_failed.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This error triggered by Apple. The user may not have any active payments."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hata Apple tarafından tetiklendi. Kullanıcının aktif ödemesi olmayabilir."
+          }
+        }
+      }
+    },
+    "error.restore_payment_failed.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The user may not have any active payments. Firstly, user needs to purhase a subscription. You can check your Apple account or environment (Production/Sandbox)."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcının aktif ödemeleri olmayabilir. Öncelikle kullanıcının bir abonelik satın alması gerekir. Apple hesabınızı veya ortamınızı (Üretim/Sandbox) kontrol edebilirsiniz."
+          }
+        }
+      }
+    },
+    "error.transaction_listener_unverified.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Successful purchase but transaction/receipt can't be verified."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satın alma işlemi başarılı ancak işlem/fiş doğrulanamıyor."
+          }
+        }
+      }
+    },
+    "error.transaction_listener_unverified.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could be a jailbroken phone."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jailbreak yapılmış bir telefon olabilir."
+          }
+        }
+      }
+    },
+    "error.transaction_listener_unverified.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could be a jailbroken phone."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jailbreak yapılmış bir telefon olabilir."
+          }
+        }
+      }
+    },
+    "error.unexpected.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected error occurred."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beklenmeyen bir hata oluştu."
+          }
+        }
+      }
+    },
+    "error.unexpected.reason" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The reason is unknown."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nedeni bilinmiyor."
+          }
+        }
+      }
+    },
+    "error.unexpected.recovery_suggestion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The reason is unknown. Please contact support@revenuemore.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nedeni bilinmiyor. Lütfen support@revenuemore.com ile iletişime geçin."
+          }
+        }
+      }
+    },
+    "not_initialize" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RevenueMore weren't initialized. Please, firstly call RevenueMore.start()"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RevenueMore başlatılmadı. Lütfen öncelikle RevenueMore.start()'ı çağırın"
+          }
+        }
+      }
+    },
+    "unit_test_mock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Türkçe"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

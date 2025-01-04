@@ -1,0 +1,67 @@
+{
+  "errors" : {
+
+  },
+  "meta" : {
+    "status" : "success",
+    "code" : 200,
+    "message" : "OK",
+    "language" : "en",
+    "version" : "v1.0.0",
+    "path" : "\/api\/v1\/paywalls",
+    "timestamp" : 1732795855
+  },
+  "pagination" : null,
+  "data" : {
+    "ts" : [
+      {
+        "ti" : "onboarding",
+        "oi" : "primary",
+        "ic" : true,
+        "ss" : 1
+      }
+    ],
+    "_id" : "66502e75fd54e9ecc1dd8ffb",
+    "os" : [
+      {
+        "ds" : "RevenueMore Unlimited Access",
+        "oi" : "primary",
+        "te" : "Unlimited Access",
+        "pc" : [
+          {
+            "dn" : 0,
+            "ic" : true,
+            "pi" : "1m_rm_access",
+            "ss" : 1
+          },
+          {
+            "dn" : 1,
+            "ic" : false,
+            "pi" : "6m_rm_access",
+            "ss" : 1
+          }
+        ],
+        "ic" : true,
+        "ss" : 1
+      },
+      {
+        "ds" : "These are products of black friday",
+        "oi" : "black_friday",
+        "te" : "Black Friday",
+        "pc" : [
+          {
+            "dn" : 0,
+            "ic" : true,
+            "pi" : "1m_rm_bf",
+            "ss" : 1
+          }
+        ],
+        "ic" : false,
+        "ss" : 1
+      }
+    ],
+    "ps" : [
+
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "D867F2B2",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "4553C8D8",
+      "localizations" : [
+        {
+          "description" : "RevenueMore Unlimited Access",
+          "displayName" : "Unlimited Access",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "RevenueMore Limitsiz Erişim",
+          "displayName" : "Limitsiz Erişim",
+          "locale" : "tr"
+        }
+      ],
+      "name" : "Unlimited Access",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "4F462211",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Monthly Unlimited Access",
+              "displayName" : "Monthly Access",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Aylık Sınırsız Erişim",
+              "displayName" : "Aylık Erişim",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "1m_rm_access",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Unlimited Access",
+          "subscriptionGroupID" : "4553C8D8",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "199.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "54FB7F9C",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "6 Monthly Unlimited Access",
+              "displayName" : "6 Monthly Access",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "6 Aylık Sınırsız Erişim",
+              "displayName" : "6 Aylık Erişim",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "6m_rm_access",
+          "recurringSubscriptionPeriod" : "P6M",
+          "referenceName" : "6 Monthly Unlimited Access",
+          "subscriptionGroupID" : "4553C8D8",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "8FE33153",
+      "localizations" : [
+        {
+          "description" : "RevenueMore Black Friday",
+          "displayName" : "Black Friday",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "RevenueMore Efsane Kasım",
+          "displayName" : "Efsane Kasım",
+          "locale" : "tr"
+        }
+      ],
+      "name" : "Black Friday",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1BD5E8D2",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Black Friday Unlimited Access",
+              "displayName" : "Black Friday",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Efsane Kasım Limitsiz Erişim",
+              "displayName" : "Efsane Kasım",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "1m_rm_bf",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Black Friday",
+          "subscriptionGroupID" : "8FE33153",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

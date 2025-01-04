@@ -1,0 +1,11 @@
+# For more information about this configuration visit
+# https://github.com/fastlane/scan#scanfile
+
+package_path "."
+scheme "RevenueMore"
+clean true
+device "iPhone 15"
+xcodebuild_formatter 'xcbeautify'
+code_coverage true
+parallel_testing false
+result_bundle true

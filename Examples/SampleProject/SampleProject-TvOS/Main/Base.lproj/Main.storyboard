@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="23504" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JpF-my-8EV">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleProject_TvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="BkC-fp-Ehy">
+                                <rect key="frame" x="80" y="205" width="1760" height="815"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="tUY-1I-oFE">
+                                    <rect key="frame" x="0.0" y="0.0" width="1760" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by RevenueMore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f5-lS-kf2">
+                                            <rect key="frame" x="0.0" y="0.0" width="1760" height="44"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9f5-lS-kf2" secondAttribute="bottom" id="0jy-ta-AL4"/>
+                                        <constraint firstItem="9f5-lS-kf2" firstAttribute="top" secondItem="tUY-1I-oFE" secondAttribute="top" id="DrE-iN-oTD"/>
+                                        <constraint firstItem="9f5-lS-kf2" firstAttribute="leading" secondItem="tUY-1I-oFE" secondAttribute="leading" id="QhH-NO-lWo"/>
+                                        <constraint firstAttribute="trailing" secondItem="9f5-lS-kf2" secondAttribute="trailing" id="amo-Nb-WVJ"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="H3B-Qz-IhJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HuZ-Q2-uDm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="BkC-fp-Ehy" secondAttribute="trailing" id="Ptb-gc-VcX"/>
+                            <constraint firstItem="BkC-fp-Ehy" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="RqM-V4-xVQ"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="BkC-fp-Ehy" secondAttribute="bottom" id="TUS-ks-EY3"/>
+                            <constraint firstItem="BkC-fp-Ehy" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="fUe-CV-g8v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yfc-I4-KBq">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Login" id="AdB-qf-c9X">
+                                <connections>
+                                    <action selector="didTapLogin:" destination="BYZ-38-t0r" id="VvC-Fs-cul"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Logout" id="Q3Z-H6-TWg">
+                                <connections>
+                                    <action selector="didTapLogout:" destination="BYZ-38-t0r" id="if9-Lu-JsL"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Restore" id="x2W-P1-wdJ">
+                            <connections>
+                                <action selector="didTapRestore:" destination="BYZ-38-t0r" id="7Um-jZ-f42"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="BkC-fp-Ehy" id="9s8-tS-rFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="3"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="opf-Rw-Xnw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JpF-my-8EV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bdf-u8-cMM">
+                        <rect key="frame" x="0.0" y="60" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pRG-Hm-ucw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lM-hb-vwt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3"/>
+        </scene>
+    </scenes>
+</document>
