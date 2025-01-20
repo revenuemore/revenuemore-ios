@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Permissions
+        run: chmod +x build-docc.sh
       - name: Run Build Docs
         run: ./build-docc.sh
       - name: Setup Pages
