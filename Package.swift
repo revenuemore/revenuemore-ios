@@ -29,7 +29,10 @@ let package = Package(
     targets: [
         .target(
             name: "RevenueMore",
-            path: "Sources"
+            path: "Sources",
+            resources: [
+                .process("Resources"),
+            ]
         ),
         .testTarget(
             name: "RevenueMoreTests",
