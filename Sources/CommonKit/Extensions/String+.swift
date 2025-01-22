@@ -39,18 +39,26 @@ extension String {
         let language = UserDefaults.standard.string(forKey: UserCacheStorage.languageCode.rawValue)
         
         // First, attempt to load the localization for the user's preferred language
-        if let path = Bundle.module.path(forResource: language, ofType: "lproj"),
+        if let path = Bundle.current.path(forResource: language, ofType: "lproj"),
            let bundle = Bundle(path: path) {
             return NSLocalizedString(self, bundle: bundle, comment: "")
         
         // If that fails, try English localization
-        } else if let path = Bundle.module.path(forResource: "en", ofType: "lproj"),
+        } else if let path = Bundle.current.path(forResource: "en", ofType: "lproj"),
                   let bundle = Bundle(path: path) {
             return NSLocalizedString(self, bundle: bundle, comment: "")
         
         // Finally, fall back to the module's default strings
         } else {
-            return NSLocalizedString(self, bundle: .module, comment: "")
+            return NSLocalizedString(self, bundle: .current, comment: "")
         }
     }
+}
+
+private class BundleFinder {}
+
+extension Bundle {
+    static var current: Bundle = {
+        return Bundle(for: BundleFinder.self)
+    }()
 }
