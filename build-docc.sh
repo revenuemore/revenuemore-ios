@@ -9,6 +9,6 @@ xcrun xcodebuild docbuild \
 xcrun docc process-archive transform-for-static-hosting \
     "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/RevenueMore.doccarchive" \
     --output-path ".docs" \
-    --hosting-base-path "/revenuemore-ios"
+    --hosting-base-path "https://<revenuemore.github.io/revenuemore-ios/"
 
 echo '<script>window.location.href += "/documentation/revenuemore"</script>' > .docs/index.html
