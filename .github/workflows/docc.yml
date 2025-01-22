@@ -24,7 +24,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: macos-14
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -32,18 +32,8 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '15.1.0'
-      - name: Build DocC
-        run: |
-          swift package resolve;
-
-          xcodebuild docbuild -scheme RevenueMore -derivedDataPath /tmp/docbuild -destination 'generic/platform=iOS';
-          
-          $(xcrun --find docc) process-archive \
-            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/RevenueMore.doccarchive \
-            --output-path docs \
-            --hosting-base-path 'revenuemore-ios';
-          
-          echo "<script>window.location.href += \"/documentation/revenuemore\"</script>" > docs/index.html;
+      - name: Run Build Docs
+        run: ./build-docc.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

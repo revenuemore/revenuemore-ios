@@ -1,14 +1,17 @@
 ##!/bin/sh
 
+swift package resolve
+
+xcodebuild docbuild -scheme RevenueMore -derivedDataPath /tmp/docbuild -destination 'generic/platform=iOS'
+
 xcrun xcodebuild docbuild \
     -scheme RevenueMore \
     -destination 'generic/platform=iOS Simulator' \
     -derivedDataPath "$PWD/.derivedData"
 
+$(xcrun --find docc) process-archive \
+    transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/RevenueMore.doccarchive \
+    --output-path docs \
+    --hosting-base-path 'revenuemore-ios'
 
-xcrun docc process-archive transform-for-static-hosting \
-    "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/RevenueMore.doccarchive" \
-    --output-path ".docs" \
-    --hosting-base-path "https://<revenuemore.github.io/revenuemore-ios/"
-
-echo '<script>window.location.href += "/documentation/revenuemore"</script>' > .docs/index.html
+echo "<script>window.location.href += \"/documentation/revenuemore\"</script>" > docs/index.html
