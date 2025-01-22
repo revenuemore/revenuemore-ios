@@ -41,7 +41,7 @@ jobs:
           $(xcrun --find docc) process-archive \
             transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/RevenueMore.doccarchive \
             --output-path docs \
-            --hosting-base-path 'RevenueMore';
+            --hosting-base-path 'revenuemore-ios';
           
           echo "<script>window.location.href += \"/documentation/revenuemore\"</script>" > docs/index.html;
       - name: Upload artifact
