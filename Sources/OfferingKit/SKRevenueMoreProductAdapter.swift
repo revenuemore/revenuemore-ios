@@ -1,4 +1,4 @@
-// 
+//
 //  See LICENSE.text for this project’s licensing information.
 //
 //  SKRevenueMoreProductAdapter.swift
@@ -29,8 +29,10 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
     var currencyCode: String? {
         #if os(visionOS)
         return product.priceLocale.currency?.identifier
-        #else
+        #elseif os(watchOS)
         return product.priceLocale.currency?.identifier
+        #else
+        return product.priceLocale.currencyCode
         #endif
     }
     
@@ -95,18 +97,22 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
         return period?.pricePerDay(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerWeek: String? {
         priceFormatter?.string(for: pricePerWeek)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerMonth: String? {
         priceFormatter?.string(for: pricePerMonth)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerYear: String? {
         priceFormatter?.string(for: pricePerYear)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerDay: String? {
         priceFormatter?.string(for: pricePerDay)
     }

@@ -156,7 +156,7 @@ public extension RevenueMore {
     ///     }
     /// }
     /// ```
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, watchOS 13.0, *)
     @available(watchOS, unavailable)
     @available(tvOS, unavailable)
     func showManageSubscriptions() async throws {
