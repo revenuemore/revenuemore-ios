@@ -18,7 +18,7 @@ purchases, subscription management, and revenue tracking with ease.
 - **Secure Data Handling:** Ensure the protection and privacy of user data with our secure infrastructure.
 - **Automatic Updates:** Stay up-to-date with the latest mobile OS versions and features through continuous SDK updates.
 
-**Optimize and manage your mobile app revenues effectively with **RevenueMore**. Get started by visiting our [documentation page](doc:GettingStarted).**
+**Optimize and manage your mobile app revenues effectively with **RevenueMore**. Get started by visiting our [documentation page](https://revenuemore.github.io/revenuemore-ios/documentation/revenuemore/).**
 
 ## Initialization
 
