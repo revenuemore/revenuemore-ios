@@ -12,13 +12,13 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macOS-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Run Build Docs
+      - name: Build Documentation
         run: ./build-docc.sh
       - name: Setup Pages
         id: pages
