@@ -11,4 +11,4 @@ xcrun docc process-archive transform-for-static-hosting \
     --output-path ".docs" \
     --hosting-base-path "https://<revenuemore.github.io/revenuemore-ios"
 
-echo '<script>window.location.href += "/documentation/revenuemore"</script>' > .docs/index.html
+echo '<script>window.location.href += "/documentation/RevenueMore"</script>' > .docs/index.html
