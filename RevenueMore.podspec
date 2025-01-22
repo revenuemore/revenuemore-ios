@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RevenueMore"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "Effortless in-app purchase management and revenue growth for mobile and beyond."
 
   # This description is used to generate tags and improve search results.
