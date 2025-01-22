@@ -1,9 +1,8 @@
 <h1 align="center">Official RevenueMore SDK for Apple</h1>
 <h3 align="center">iOS / tvOS / macOS / watchOS / VisionOS</h3>
 
-![Spm](https://img.shields.io/badge/Spm-compatible-green?style=flat-square&logo=swift&logoColor=white)
-![CocoaPods](https://img.shields.io/badge/CocoaPods-compatible-green?style=flat-square&logo=cocoapods&logoColor=white)
-![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20VisionOS-blue?style=flat-square&logo=apple&logoColor=white)
+[![Platforms](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Frevenuemore%2Frevenuemore-ios%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/revenuemore/revenuemore-ios)
+[![Swift Package Index](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Frevenuemore%2Frevenuemore-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/revenuemore/revenuemore-ios)
 
 ---
 ## Overview
