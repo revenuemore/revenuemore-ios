@@ -27,7 +27,11 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
     }
     
     var currencyCode: String? {
-        return product.priceLocale.currencyCode
+        #if os(visionOS)
+        return product.priceLocale.currency?.identifier
+        #else
+        return product.priceLocale.currency?.identifier
+        #endif
     }
     
     var price: Decimal {
@@ -71,18 +75,22 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
         return formatter
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerWeek: Decimal? {
         return period?.pricePerWeek(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerMonth: Decimal? {
         return period?.pricePerMonth(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerYear: Decimal? {
         return period?.pricePerYear(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerDay: Decimal? {
         return period?.pricePerDay(with: price)
     }

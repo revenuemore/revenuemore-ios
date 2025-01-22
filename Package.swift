@@ -15,10 +15,10 @@ let package = Package(
     name: "RevenueMore",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
+        .iOS(.v12),
+        .macOS(.v10_13),
         .visionOS(.v1),
-        .tvOS(.v9),
+        .tvOS(.v12),
         .watchOS(.v9)
     ],
     products: [

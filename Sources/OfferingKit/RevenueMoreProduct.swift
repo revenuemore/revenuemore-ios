@@ -175,6 +175,7 @@ public struct RevenueMoreProduct: Hashable, RevenueMoreProductProtocol, @uncheck
     /// The subscription group identifier, if available. Group IDs may be used to manage subscriptions across tiers.
     ///
     /// - Requires: iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, or newer.
+    @available(macOS 10.14, *)
     public var subscriptionGroupID: String? {
         return self.adapter.subscriptionGroupID
     }
