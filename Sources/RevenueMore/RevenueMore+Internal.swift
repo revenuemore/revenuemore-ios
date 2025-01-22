@@ -213,7 +213,7 @@ internal extension RevenueMore {
     ///
     /// - Throws: An error if the subscriptions interface cannot be presented.
     /// - Note:
-    ///   - Available on iOS 13.0, macOS 10.15, tvOS 13.0 (and possibly xrOS).
+    ///   - Available on iOS 13.0, macOS 10.15, tvOS 13.0 (and possibly visionOS).
     ///   - Unavailable on watchOS and tvOS under some constraints.
     ///   - Uses `@MainActor` to ensure UI presentation happens on the main thread.
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)

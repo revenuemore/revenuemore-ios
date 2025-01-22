@@ -8,7 +8,7 @@
 //  Copyright © 2024 RevenueMore. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(xrOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
 import UIKit
 import Foundation
 import StoreKit

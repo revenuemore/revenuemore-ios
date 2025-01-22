@@ -388,7 +388,7 @@ public final class RevenueMore: @unchecked Sendable {
     ///
     /// - Parameter completion: A closure called with a boolean indicating whether the manage subscriptions screen
     ///   was successfully shown (`true`) or not (`false`).
-    /// - Note: Only available for iOS and macOS (and possibly xrOS). It's unavailable for `watchOS` and `tvOS`.
+    /// - Note: Only available for iOS and macOS (and possibly visionOS). It's unavailable for `watchOS` and `tvOS`.
     ///
     /// **Example Usage**:
     /// ```swift

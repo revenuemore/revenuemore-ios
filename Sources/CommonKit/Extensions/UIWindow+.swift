@@ -8,7 +8,7 @@
 //  Copyright © 2024 RevenueMore. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(xrOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
 import UIKit
 #elseif os(watchOS)
 import UIKit
@@ -17,9 +17,9 @@ import WatchKit
 import AppKit
 #endif
 
-// MARK: - iOS / tvOS / macCatalyst / xrOS
+// MARK: - iOS / tvOS / macCatalyst / visionOS
 
-#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst) || os(xrOS)
+#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst) || os(visionOS)
 
 /// An extension adding a sort priority to each UIScene.ActivationState.
 ///
@@ -73,15 +73,15 @@ extension UIWindow {
     }
 }
 
-#elseif os(xrOS)
+#elseif os(visionOS)
 
-// MARK: - xrOS
+// MARK: - visionOS
 
 extension UIWindow {
     
-    /// Finds and returns the key window for the app on xrOS.
+    /// Finds and returns the key window for the app on visionOS.
     ///
-    /// - If running on iOS 13.0 or tvOS 13.0 or later (for xrOS), this property sorts the app’s connected scenes
+    /// - If running on iOS 13.0 or tvOS 13.0 or later (for visionOS), this property sorts the app’s connected scenes
     ///   by `activationState.sortPriority` and returns the first window marked as `.isKeyWindow`.
     /// - Otherwise, it falls back to `UIWindow.activeWindow`.
     ///

@@ -108,7 +108,7 @@ internal class StoreKit2Purchase: ObservableObject, @unchecked Sendable {
     func purchase(product: RM2Product, uuid: String, simulateAskToBuy: Bool = false, quantity: Int = 1) async throws -> RM2PaymentTransaction {
         let optionals = payment(appAccountToken: uuid, quantity: quantity, simulateAskToBuy: simulateAskToBuy)
         do {
-            #if os(xrOS)
+            #if os(visionOS)
             guard let windowsScene = await UIApplication.shared.windowsScene else {
                 throw RevenueMoreErrorInternal.notFoundWindowScene
             }

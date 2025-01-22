@@ -11,7 +11,6 @@
 		B5D99BE92CF369680073C36F /* SampleProject-WatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B5D99BE82CF369680073C36F /* SampleProject-WatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5D99C222CF36B4E0073C36F /* RevenueMore in Frameworks */ = {isa = PBXBuildFile; productRef = B5D99C212CF36B4E0073C36F /* RevenueMore */; };
 		B5D99C5E2CF38B3D0073C36F /* RevenueMore in Frameworks */ = {isa = PBXBuildFile; productRef = B5D99C5D2CF38B3D0073C36F /* RevenueMore */; };
-		B5D99C7D2CF39E540073C36F /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = B5D99C7C2CF39E540073C36F /* RealityKitContent */; };
 		B5D99C9D2CF39F180073C36F /* RevenueMore in Frameworks */ = {isa = PBXBuildFile; productRef = B5D99C9C2CF39F180073C36F /* RevenueMore */; };
 		B5F186772CEB357900E424FD /* RevenueMore in Frameworks */ = {isa = PBXBuildFile; productRef = B5F186762CEB357900E424FD /* RevenueMore */; };
 /* End PBXBuildFile section */
@@ -290,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D99C9D2CF39F180073C36F /* RevenueMore in Frameworks */,
-				B5D99C7D2CF39E540073C36F /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +630,6 @@
 			);
 			name = "SampleProject-VisionOS";
 			packageProductDependencies = (
-				B5D99C7C2CF39E540073C36F /* RealityKitContent */,
 				B5D99C9C2CF39F180073C36F /* RevenueMore */,
 			);
 			productName = "SampleProject-VisionOS";
@@ -2012,10 +2009,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B5F186752CEB357900E424FD /* XCLocalSwiftPackageReference "../../../revenuemore-ios" */;
 			productName = RevenueMore;
-		};
-		B5D99C7C2CF39E540073C36F /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
 		};
 		B5D99C9C2CF39F180073C36F /* RevenueMore */ = {
 			isa = XCSwiftPackageProductDependency;

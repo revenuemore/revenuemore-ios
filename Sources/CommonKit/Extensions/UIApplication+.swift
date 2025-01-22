@@ -8,7 +8,7 @@
 //  Copyright © 2024 RevenueMore. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(xrOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
 import UIKit
 #elseif os(watchOS)
 import UIKit
@@ -17,15 +17,15 @@ import WatchKit
 import AppKit
 #endif
 
-// MARK: - iOS, xrOS, macCatalyst
+// MARK: - iOS, visionOS, macCatalyst
 
-#if os(iOS) || os(xrOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(visionOS) || targetEnvironment(macCatalyst)
 
 extension UIApplication {
     /// Opens the "Manage Subscriptions" page in the App Store application if possible.
     ///
     /// - Parameter completion: A closure called once the URL is opened or fails to open.
-    /// - Important: This method attempts to open the system URL for managing subscriptions on iOS, xrOS, or macCatalyst.
+    /// - Important: This method attempts to open the system URL for managing subscriptions on iOS, visionOS, or macCatalyst.
     /// - Note: If the URL cannot be opened, `completion` is called with `false`.
     ///
     /// ### Example

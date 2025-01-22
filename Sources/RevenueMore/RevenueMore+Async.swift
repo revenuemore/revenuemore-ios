@@ -141,7 +141,7 @@ public extension RevenueMore {
     /// - Throws: An error if showing the subscriptions management interface fails. This can happen
     ///   if the device cannot open the relevant App Store URL or if the platform is not supported.
     ///
-    /// - Note: Only available on iOS 13.0, macOS 10.15 (and possibly xrOS).
+    /// - Note: Only available on iOS 13.0, macOS 10.15 (and possibly visionOS).
     ///   Unavailable on watchOS and tvOS.
     /// - SeeAlso: ``RevenueMore/showManageSubscriptions(completion:)``
     ///
