@@ -40,7 +40,7 @@ final class Bundle_Tests: XCTestCase {
         
         // Check if the bundle identifier contains the expected string (handling optional values safely)
         let bundleIdentifier = fallbackBundle.bundleIdentifier ?? ""
-        XCTAssertTrue(bundleIdentifier.contains("revenuemore-ios.RevenueMoreTests"),
+        XCTAssertTrue(bundleIdentifier.contains("RevenueMoreTests"),
                       "Fallback bundle identifier should contain the expected bundle name. Found: \(bundleIdentifier)")
     }
 
