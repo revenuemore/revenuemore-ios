@@ -114,7 +114,6 @@
 		B5D99C422CF38B1B0073C36F /* SampleProject-TvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleProject-TvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D99C4C2CF38B1B0073C36F /* SampleProject-TvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleProject-TvOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D99C782CF39E530073C36F /* SampleProject-VisionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleProject-VisionOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5D99C7B2CF39E540073C36F /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		B5D99C8C2CF39E550073C36F /* SampleProject-VisionOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleProject-VisionOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F186412CEB351300E424FD /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F186572CEB351400E424FD /* SampleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,14 +330,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B5D99C7A2CF39E540073C36F /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				B5D99C7B2CF39E540073C36F /* RealityKitContent */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		B5F186382CEB351300E424FD = {
 			isa = PBXGroup;
 			children = (
@@ -357,7 +348,6 @@
 				B5D99C792CF39E540073C36F /* SampleProject-VisionOS */,
 				B5D99C8F2CF39E550073C36F /* SampleProject-VisionOSTests */,
 				B5158D722CEDE70B00CC3E6E /* Frameworks */,
-				B5D99C7A2CF39E540073C36F /* Packages */,
 				B5F186422CEB351300E424FD /* Products */,
 			);
 			sourceTree = "<group>";

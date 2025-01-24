@@ -19,7 +19,7 @@ import Foundation
 /// **Concurrency**:
 /// - Marked `@unchecked Sendable` because it holds an `RM2Product`, which may have
 ///   its own concurrency constraints. Ensure safe usage across concurrency boundaries.
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 internal class RevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProductProtocol {
     
     // MARK: - Properties

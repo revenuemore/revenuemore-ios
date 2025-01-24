@@ -17,10 +17,10 @@ Optimize and manage your mobile app revenues effectively with **RevenueMore**. G
 @Metadata {
     @PageColor(purple)
     @SupportedLanguage(swift)
-    @Available(iOS, introduced: "9.0")
-    @Available(macOS, introduced: "10.10")
-    @Available(visionOS, introduced: "1.0.0")
-    @Available(tvOS, introduced: "9.0.0")
-    @Available(watchOS, introduced: "9.0.0")
-    @Available("RevenueMore", introduced: "1.0.0")
+    @Available(iOS, introduced: "12.0")
+    @Available(macOS, introduced: "10.13")
+    @Available(visionOS, introduced: "1.0")
+    @Available(tvOS, introduced: "12.0")
+    @Available(watchOS, introduced: "9.0")
+    @Available("RevenueMore", introduced: "1.0")
 }

@@ -87,7 +87,7 @@ internal class OfferingManager: @unchecked Sendable {
     ///   - response: A `Paywalls.Response` representing the server’s paywall/subscription data.
     ///   - completion: A closure returning ``Offerings`` on success or an error on failure.
     private func fetchProducts(response: Paywalls.Response, completion: @escaping OfferingsClosure) {
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             fetchProducts(with: response, completion: completion)
         } else {
             fetchSKProducts(with: response, completion: completion)
@@ -129,7 +129,7 @@ internal class OfferingManager: @unchecked Sendable {
     /// - Parameters:
     ///   - paywallResponse: A `Paywalls.Response` describing available offerings.
     ///   - completion: A closure returning ``Offerings`` on success or an error on failure.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private func fetchProducts(with paywallResponse: Paywalls.Response, completion: @escaping OfferingsClosure) {
         guard let offerings = paywallResponse.subscriptions else {
             💩("No offerings were found.")
@@ -181,7 +181,7 @@ internal class OfferingManager: @unchecked Sendable {
         
         let triggers = paywallResponse.triggers
         
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             // Handle StoreKit 2 products
             if let products = products as? [Product] {
                 let offering = offerings.map { subscription in

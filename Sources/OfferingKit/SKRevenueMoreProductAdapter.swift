@@ -60,12 +60,12 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
         }
     }
     
-    @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+    @available(iOS 14.0, macOS 11.0, tvOS 14.0, *)
     var isFamilyShareable: Bool {
         return product.isFamilyShareable
     }
     
-    @available(iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
+    @available(macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
     var subscriptionGroupID: String? {
         return product.subscriptionGroupIdentifier
     }

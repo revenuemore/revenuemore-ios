@@ -50,7 +50,7 @@ internal class TransactionManager: @unchecked Sendable {
     ///   - A ``RevenueMorePaymentTransaction`` object on success, or
     ///   - A `RevenueMoreErrorInternal` on failure (e.g., StoreKit manager not initialized).
     func listenTransaction(completion: @escaping (TransactionClosure)) {
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             sk2ListenTransaction(completion: completion)
         } else {
             sk1ListenTransaction(completion: completion)
@@ -108,11 +108,11 @@ internal class TransactionManager: @unchecked Sendable {
         }
     }
     
-    /// Uses StoreKit2 (iOS 15+, tvOS 15+, watchOS 8+, macOS 12+) to listen for transaction updates.
+    /// Uses StoreKit2 (iOS 15+, tvOS 15+, macOS 12+) to listen for transaction updates.
     ///
     /// - Parameter completion: A closure that returns updated or new transactions as
     ///   ``RevenueMorePaymentTransaction`` objects on success, or a `RevenueMoreErrorInternal` on failure.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private func sk2ListenTransaction(completion: @escaping (TransactionClosure)) {
         guard
             let storeKit2Manager = storeKitManager as? StoreKit2Manager
