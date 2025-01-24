@@ -1,4 +1,4 @@
-// 
+//
 //  See LICENSE.text for this project’s licensing information.
 //
 //  SKRevenueMoreProductAdapter.swift
@@ -27,7 +27,13 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
     }
     
     var currencyCode: String? {
+        #if os(visionOS)
+        return product.priceLocale.currency?.identifier
+        #elseif os(watchOS)
+        return product.priceLocale.currency?.identifier
+        #else
         return product.priceLocale.currencyCode
+        #endif
     }
     
     var price: Decimal {
@@ -54,12 +60,12 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
         }
     }
     
-    @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+    @available(iOS 14.0, macOS 11.0, tvOS 14.0, *)
     var isFamilyShareable: Bool {
         return product.isFamilyShareable
     }
     
-    @available(iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
+    @available(macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
     var subscriptionGroupID: String? {
         return product.subscriptionGroupIdentifier
     }
@@ -71,34 +77,42 @@ internal class SKRevenueMoreProductAdapter: @unchecked Sendable, RevenueMoreProd
         return formatter
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerWeek: Decimal? {
         return period?.pricePerWeek(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerMonth: Decimal? {
         return period?.pricePerMonth(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerYear: Decimal? {
         return period?.pricePerYear(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var pricePerDay: Decimal? {
         return period?.pricePerDay(with: price)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerWeek: String? {
         priceFormatter?.string(for: pricePerWeek)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerMonth: String? {
         priceFormatter?.string(for: pricePerMonth)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerYear: String? {
         priceFormatter?.string(for: pricePerYear)
     }
     
+    @available(macOS 10.13.2, *)
     var displayPricePerDay: String? {
         priceFormatter?.string(for: pricePerDay)
     }

@@ -174,7 +174,7 @@ extension HTTPClient {
 
     }
 
-    @available(iOS 15.0, macOS 10.15.0, *)
+    @available(iOS 15.0, tvOS 13.0, macOS 10.15.0, *)
     func refreshAccessToken() async -> String? {
         return ""
     }

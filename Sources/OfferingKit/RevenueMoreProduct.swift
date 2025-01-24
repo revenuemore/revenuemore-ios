@@ -49,7 +49,7 @@ public struct RevenueMoreProduct: Hashable, RevenueMoreProductProtocol, @uncheck
     ///
     /// - Parameter product: A StoreKit 2 product to adapt.
     /// - Requires: iOS 15.0 or equivalent for StoreKit 2.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     init(product: RM2Product) {
         self.adapter = RevenueMoreProductAdapter(product: product)
     }
@@ -166,8 +166,8 @@ public struct RevenueMoreProduct: Hashable, RevenueMoreProductProtocol, @uncheck
     
     /// Indicates if the product can be shared with family members (e.g., for subscription products).
     ///
-    /// - Requires: iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, or newer.
-    @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+    /// - Requires: iOS 14.0, macOS 11.0, tvOS 14.0, or newer.
+    @available(iOS 14.0, macOS 11.0, tvOS 14.0, *)
     public var isFamilyShareable: Bool {
         return self.adapter.isFamilyShareable
     }
@@ -175,6 +175,7 @@ public struct RevenueMoreProduct: Hashable, RevenueMoreProductProtocol, @uncheck
     /// The subscription group identifier, if available. Group IDs may be used to manage subscriptions across tiers.
     ///
     /// - Requires: iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, or newer.
+    @available(macOS 10.14, *)
     public var subscriptionGroupID: String? {
         return self.adapter.subscriptionGroupID
     }
@@ -196,8 +197,8 @@ public struct RevenueMoreProduct: Hashable, RevenueMoreProductProtocol, @uncheck
     /// The underlying StoreKit 2 product if this instance was created from an `RM2Product`.
     ///
     /// - Returns: An `RM2Product` if StoreKit 2 is in use, otherwise `nil`.
-    /// - Requires: iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, or newer.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    /// - Requires: iOS 15.0, tvOS 15.0, macOS 12.0, or newer.
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     public var sk2Product: RM2Product? {
         return (self.adapter as? RevenueMoreProductAdapter)?.product
     }

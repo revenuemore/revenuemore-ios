@@ -21,7 +21,7 @@ import Foundation
 /// - Marked `@unchecked Sendable` because it stores an `RM2PaymentTransaction` (a type that may have
 ///   its own concurrency considerations), but is designed to be used safely across concurrency domains
 ///   in combination with Swift's concurrency model.
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 internal class RevenueMorePaymentTransactionAdapter: @unchecked Sendable, RevenueMorePaymentTransactionProtocol {
 
     // MARK: - Properties

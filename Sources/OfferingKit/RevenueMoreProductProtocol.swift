@@ -82,8 +82,8 @@ internal protocol RevenueMoreProductProtocol: Sendable {
     /// Configure family sharing in App Store Connect. For more info, see
     /// [Turn on Family Sharing for in-app purchases](https://support.apple.com/en-us/HT201079).
     ///
-    /// - Requires: iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, or later.
-    @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+    /// - Requires: iOS 14.0, macOS 11.0, tvOS 14.0, or later.
+    @available(iOS 14.0, macOS 11.0, tvOS 14.0, *)
     var isFamilyShareable: Bool { get }
     
     // MARK: - Subscription Group
@@ -93,8 +93,8 @@ internal protocol RevenueMoreProductProtocol: Sendable {
     /// All auto-renewable subscriptions must belong to a group created in App Store Connect.
     /// Returns `nil` for non-subscription products or if not configured.
     ///
-    /// - Requires: iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, or later.
-    @available(iOS 12.0, macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
+    /// - Requires: macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, or later.
+    @available(macCatalyst 13.0, tvOS 12.0, macOS 10.14, watchOS 6.2, *)
     var subscriptionGroupID: String? { get }
     
     // MARK: - Price Formatting

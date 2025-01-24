@@ -1,8 +1,8 @@
 author: Revenue More
 output: ./Documantation
 min_acl: public
-copyright: Copyright © 2024 Revenue More. All rights reserved.
+copyright: Copyright © 2024 RevenueMore. All rights reserved.
 hide_documentation_coverage: false
 theme: apple
 author_url: https://www.revenuemore.com
-github_url: https://github.com/revenuemore/ios
+github_url: https://github.com/revenuemore/revenuemore-ios

@@ -54,7 +54,7 @@ internal class PurchaseManager: @unchecked Sendable {
     /// - Note: If iOS 15 (or equivalent tvOS, watchOS, macOS) is available, calls `StoreKit2Manager.canMakePayments()`;
     ///   otherwise calls `StoreKit1Manager.canMakePayments()`.
     static func canMakePayments() -> Bool {
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
            return StoreKit2Manager.canMakePayments()
         } else {
             return StoreKit1Manager.canMakePayments()
@@ -81,7 +81,7 @@ internal class PurchaseManager: @unchecked Sendable {
         simulateAskToBuy: Bool,
         completion: @escaping (PurchaseClosure)
     ) {
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             sk2purhase(with: product, quantity: quantity, simulateAskToBuy: simulateAskToBuy, completion: completion)
         } else {
             sk1purhase(with: product, quantity: quantity, simulateAskToBuy: simulateAskToBuy, completion: completion)
@@ -97,7 +97,7 @@ internal class PurchaseManager: @unchecked Sendable {
     /// - On iOS 15+, uses the StoreKit 2 flow via `sk2Restore`.
     /// - Otherwise, falls back to StoreKit 1 flow via `sk1Restore`.
     func restore(completion: @escaping (RestoreClosure)) {
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             sk2Restore(completion: completion)
         } else {
             sk1Restore(completion: completion)
@@ -110,7 +110,7 @@ internal class PurchaseManager: @unchecked Sendable {
     ///
     /// - Parameter completion: A closure that returns an array of ``RevenueMorePaymentTransaction`` on success,
     ///   or a `RevenueMoreErrorInternal` if something goes wrong.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private func sk2Restore(completion: @escaping (RestoreClosure)) {
         guard
             let storeKit2Manager = storeKitManager as? StoreKit2Manager
@@ -146,7 +146,7 @@ internal class PurchaseManager: @unchecked Sendable {
     ///   - quantity: The number of units to purchase.
     ///   - simulateAskToBuy: Whether to simulate the Ask to Buy flow in sandbox.
     ///   - completion: A `PurchaseClosure` that delivers the result of the purchase.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private func sk2purhase(
         with product: RevenueMoreProduct,
         quantity: Int,

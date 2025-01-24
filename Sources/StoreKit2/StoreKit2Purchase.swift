@@ -20,11 +20,11 @@ import StoreKit
 ///
 /// - Parameter transaction: The `Transaction` object representing the payment transaction to be handled.
 ///
-/// - Note: This typealias requires iOS 15.0, tvOS 15.0, watchOS 8.0, or macOS 12.0 and later.
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+/// - Note: This typealias requires iOS 15.0, tvOS 15.0, or macOS 12.0 and later.
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 public typealias TransactionUpdate = ((Transaction) async -> Void)
 
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 internal class StoreKit2Purchase: ObservableObject, @unchecked Sendable {
     // MARK: - PROPERTIES
 
@@ -108,7 +108,7 @@ internal class StoreKit2Purchase: ObservableObject, @unchecked Sendable {
     func purchase(product: RM2Product, uuid: String, simulateAskToBuy: Bool = false, quantity: Int = 1) async throws -> RM2PaymentTransaction {
         let optionals = payment(appAccountToken: uuid, quantity: quantity, simulateAskToBuy: simulateAskToBuy)
         do {
-            #if os(xrOS)
+            #if os(visionOS)
             guard let windowsScene = await UIApplication.shared.windowsScene else {
                 throw RevenueMoreErrorInternal.notFoundWindowScene
             }

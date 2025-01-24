@@ -20,7 +20,7 @@ import Foundation
 /// **Concurrency**:
 /// - Marked `@unchecked Sendable` to allow use across concurrency boundaries.
 ///   Ensure thread-safety within `StoreKit2Fetcher` and `StoreKit2Purchase`.
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 internal class StoreKit2Manager: NSObject, @unchecked Sendable {
 
     // MARK: - Properties

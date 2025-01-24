@@ -48,8 +48,8 @@ extension RevenueMorePeriod {
     /// Initializes a `RevenueMorePeriod` using a StoreKit 2 subscription period.
     ///
     /// - Parameter value: A `RM2Product.SubscriptionPeriod` instance (presumably bridging or wrapping StoreKit 2’s `SubscriptionPeriod`).
-    /// - Requires: iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, or visionOS 1.0.
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
+    /// - Requires: iOS 15.0, macOS 12.0, tvOS 15.0 or visionOS 1.0.
+    @available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, *)
     init(_ value: RM2Product.SubscriptionPeriod) {
         self.value = value.value
         self.unit = .init(value.unit)
@@ -102,8 +102,8 @@ extension RevenueMorePeriod.Unit {
     /// Initializes a `RevenueMorePeriod.Unit` from a StoreKit 2 subscription period unit.
     ///
     /// - Parameter value: A `RM2Product.SubscriptionPeriod.Unit`.
-    /// - Requires: iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, or newer.
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
+    /// - Requires: iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, or newer.
+    @available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, *)
     init(_ value: RM2Product.SubscriptionPeriod.Unit) {
         self = switch value {
         case .day: .day

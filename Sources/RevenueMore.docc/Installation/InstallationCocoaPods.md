@@ -7,10 +7,10 @@ CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. This
 - **Xcode 15.0** or later
 - **CocoaPods 1.10.0** or later
 - An existing Xcode project targeting one or more of the following platforms:
-  - **iOS:** 9.0 or later
-  - **macOS:** 10.10 or later
+  - **iOS:** 12.0 or later
+  - **macOS:** 10.13 or later
   - **visionOS:** 1.0 or later
-  - **tvOS:** 9.0 or later
+  - **tvOS:** 12.0 or later
   - **watchOS:** 9.0 or later
 
 ## Step-by-Step Integration

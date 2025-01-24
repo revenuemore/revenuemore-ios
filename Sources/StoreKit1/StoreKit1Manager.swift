@@ -215,14 +215,14 @@ internal class StoreKit1Manager: NSObject, @unchecked Sendable {
     ///   was successfully opened, or `false` if it could not be opened.
     ///
     /// **Platform Differences**:
-    /// - **iOS/xrOS/macCatalyst**: Uses `UIApplication.shared.openManageSubscriptions(...)`.
+    /// - **iOS/visionOS/macCatalyst**: Uses `UIApplication.shared.openManageSubscriptions(...)`.
     /// - **macOS**: Uses `NSApplication.shared.openManageSubscriptions(...)`.
     /// - **watchOS**: Uses `WKExtension.shared().openManageSubscriptions(...)`.
     ///
     /// - Warning: This method is annotated with `@MainActor` because it performs a UI-related action.
     @MainActor
     func showManageSubscriptions(completion: @escaping ((Bool) -> Void)) {
-        #if os(iOS) || os(xrOS) || targetEnvironment(macCatalyst)
+        #if os(iOS) || os(visionOS) || targetEnvironment(macCatalyst)
         UIApplication.shared.openManageSubscriptions(completion: completion)
         #elseif os(macOS)
         NSApplication.shared.openManageSubscriptions(completion: completion)

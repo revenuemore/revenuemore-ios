@@ -64,8 +64,8 @@ struct SwiftUIApp: App {
 
 | Platform | Minimum target |
 |----------|----------------|
-| iOS      | 9.0+          |
-| tvOS     | 9.0+          |
-| macOS    | 10.10+         |
+| iOS      | 12.0+          |
+| tvOS     | 12.0+          |
+| macOS    | 10.13+         |
 | watchOS  | 9.0+           |
 | visionOS | 1.0+           |

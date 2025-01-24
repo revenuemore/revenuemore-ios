@@ -8,7 +8,7 @@
 //  Copyright © 2024 RevenueMore. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(xrOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
 import UIKit
 import Foundation
 import StoreKit
@@ -161,14 +161,13 @@ class DeviceEnvironments: @unchecked Sendable {
     /// - iOS 13.0 or later
     /// - macOS 10.15 or later
     /// - tvOS 13.0 or later
-    /// - watchOS 6.2 or later
     /// - visionOS 1.0 or later
     ///
     /// - Returns:
     ///   - A `String` with the storefront’s country code (e.g., `"US"`, `"GB"`),
     ///   - `nil` if not available or if running on older OS versions.
     static var countryCode: String? {
-        if #available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, visionOS 1.0, *) {
+        if #available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, *) {
             return SKPaymentQueue.default().storefront?.countryCode
         } else {
             return nil

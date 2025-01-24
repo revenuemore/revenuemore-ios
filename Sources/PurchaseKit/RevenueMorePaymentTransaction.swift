@@ -37,7 +37,7 @@ public struct RevenueMorePaymentTransaction: @unchecked Sendable, RevenueMorePay
     ///
     /// - Parameter transaction: A StoreKit 2 transaction object to adapt.
     /// - Requires: iOS 15.0 (or equivalent tvOS, watchOS, macOS versions) or newer for StoreKit 2.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     init(transaction: RM2PaymentTransaction) {
         self.adapter = RevenueMorePaymentTransactionAdapter(transaction: transaction)
     }
@@ -117,7 +117,7 @@ public struct RevenueMorePaymentTransaction: @unchecked Sendable, RevenueMorePay
     ///
     /// If the adapter is a `RevenueMorePaymentTransactionAdapter`, this property exposes
     /// its `transaction` as an `RM2PaymentTransactionPublic`.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     public var sk2PaymentTransaction: RM2PaymentTransactionPublic? {
         return (self.adapter as? RevenueMorePaymentTransactionAdapter)?.transaction
     }

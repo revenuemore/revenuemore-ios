@@ -25,7 +25,7 @@ import StoreKit
 /// **Concurrency**:
 /// - Marked `@unchecked Sendable` to indicate it can be shared across
 ///   concurrency domains. Make sure to handle thread safety appropriately.
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 internal class StoreKit2Fetcher: @unchecked Sendable {
     
     // MARK: - Product Fetching
@@ -89,7 +89,7 @@ internal class StoreKit2Fetcher: @unchecked Sendable {
     /// Displays the subscription management interface on supported platforms.
     ///
     /// - Important:
-    ///   - Requires iOS 15.0, tvOS 15.0, watchOS 8.0, or macOS 12.0 and later.
+    ///   - Requires iOS 15.0, tvOS 15.0, or macOS 12.0 and later.
     ///   - Marked `@MainActor` due to UI interaction requirements on certain platforms.
     /// - Throws:
     ///   - `RevenueMoreErrorInternal.notShowManageSubscriptions(errorDescription)` if showing the subscriptions
@@ -105,7 +105,7 @@ internal class StoreKit2Fetcher: @unchecked Sendable {
     @MainActor
     func showManageSubscriptions() async throws {
         // Calls the AppStore.showManageSubscriptions method to display the subscription management interface.
-        #if os(iOS) || os(xrOS) || targetEnvironment(macCatalyst)
+        #if os(iOS) || os(visionOS) || targetEnvironment(macCatalyst)
         try await openSubscriptionManagement()
         #elseif os(macOS)
         try await openSubscriptionManagement()
@@ -115,12 +115,12 @@ internal class StoreKit2Fetcher: @unchecked Sendable {
     }
 }
 
-@available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+@available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
 private extension StoreKit2Fetcher {
     
-    // MARK: - iOS / Mac Catalyst / xrOS
-    #if os(iOS) || os(xrOS) || targetEnvironment(macCatalyst)
-    /// Opens the subscription management interface on iOS, macCatalyst, or xrOS.
+    // MARK: - iOS / Mac Catalyst / visionOS
+    #if os(iOS) || os(visionOS) || targetEnvironment(macCatalyst)
+    /// Opens the subscription management interface on iOS, macCatalyst, or visionOS.
     ///
     /// - Throws:
     ///   - `RevenueMoreErrorInternal.notShowManageSubscriptions(errorDescription)` if an error occurs

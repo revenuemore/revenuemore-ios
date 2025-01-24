@@ -388,7 +388,7 @@ public final class RevenueMore: @unchecked Sendable {
     ///
     /// - Parameter completion: A closure called with a boolean indicating whether the manage subscriptions screen
     ///   was successfully shown (`true`) or not (`false`).
-    /// - Note: Only available for iOS and macOS (and possibly xrOS). It's unavailable for `watchOS` and `tvOS`.
+    /// - Note: Only available for iOS and macOS (and possibly visionOS). It's unavailable for `watchOS` and `tvOS`.
     ///
     /// **Example Usage**:
     /// ```swift
@@ -458,7 +458,7 @@ public final class RevenueMore: @unchecked Sendable {
     ///
     /// - Returns: A `StoreKit2Manager` instance.
     /// - Warning: Force-casts `self._storeKit2Manager`. Crashes if `nil` on unsupported systems.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     internal var storeKit2Manager: StoreKit2Manager {
         return self._storeKit2Manager! as! StoreKit2Manager
     }
@@ -467,7 +467,7 @@ public final class RevenueMore: @unchecked Sendable {
     ///
     /// - Returns: A `StoreKit2Fetcher` instance.
     /// - Warning: Force-casts `self._storeKit2Fetcher`. Crashes if `nil` on unsupported systems.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private var storeKit2Fetcher: StoreKit2Fetcher {
         return self._storeKit2Fetcher! as! StoreKit2Fetcher
     }
@@ -476,7 +476,7 @@ public final class RevenueMore: @unchecked Sendable {
     ///
     /// - Returns: A `StoreKit2Purchase` instance.
     /// - Warning: Force-casts `self._storeKit2Purchase`. Crashes if `nil` on unsupported systems.
-    @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+    @available(iOS 15.0, tvOS 15.0, macOS 12.0, *)
     private var storeKit2Purchase: StoreKit2Purchase {
         return self._storeKit2Purchase! as! StoreKit2Purchase
     }
@@ -523,7 +523,7 @@ public final class RevenueMore: @unchecked Sendable {
         self.userManager = userManager
         self.backendConfigurator = backendConfigurator
 
-        if #available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *) {
+        if #available(iOS 15.0, tvOS 15.0, macOS 12.0, *) {
             _storeKit2Fetcher = StoreKit2Fetcher()
             _storeKit2Purchase = StoreKit2Purchase(forceFinishTransaction: forceFinishTransaction)
             _storeKit2Manager = StoreKit2Manager(
