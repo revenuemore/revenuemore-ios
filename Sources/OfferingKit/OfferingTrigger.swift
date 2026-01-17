@@ -10,8 +10,8 @@
 
 import Foundation
 
-// MARK: - OfferingTrigger (Disabled for now)
-// TODO: Re-enable when trigger feature is implemented
+// MARK: - OfferingTrigger (Disabled)
+// This will be re-enabled when the trigger feature is implemented on backend
 
 /*
 public struct OfferingTrigger {

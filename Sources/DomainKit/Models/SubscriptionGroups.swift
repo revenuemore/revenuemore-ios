@@ -36,8 +36,8 @@ enum SubscriptionGroups {
     /// usage is thread-safe.
     struct Response: Decodable, @unchecked Sendable {
 
-        // MARK: - Triggers (Disabled for now)
-        // TODO: Re-enable when trigger feature is implemented
+        // MARK: - Triggers (Disabled)
+        // Triggers will be re-enabled when the feature is implemented on backend
         // /// A collection of `Trigger` objects related to subscription groups.
         // var triggers: [Trigger]?
 

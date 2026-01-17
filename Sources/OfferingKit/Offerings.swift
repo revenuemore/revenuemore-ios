@@ -16,8 +16,8 @@ import Foundation
 /// and pointers to current active offerings.
 public class Offerings: NSObject, @unchecked Sendable {
 
-    // MARK: - Triggers (Disabled for now)
-    // TODO: Re-enable when trigger feature is implemented
+    // MARK: - Triggers (Disabled)
+    // Triggers will be re-enabled when the feature is implemented on backend
     // /// Optional array of `OfferingTrigger` objects related to the offerings.
     // /// Triggers may represent specific conditions or events associated with offerings.
     // public var triggers: [OfferingTrigger]?
