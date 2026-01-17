@@ -50,7 +50,7 @@ final class RevenueMoreErrorInternalTests: XCTestCase {
 
     func testNSErrorConversion() {
         // Arrange
-        let error = RevenueMoreErrorInternal.fetchPaywalls("Failed to fetch paywalls")
+        let error = RevenueMoreErrorInternal.fetchSubscriptionGroups("Failed to fetch subscription groups")
 
         // Act
         let nsError = error.convertPublicError
@@ -58,7 +58,7 @@ final class RevenueMoreErrorInternalTests: XCTestCase {
         // Assert
         XCTAssertEqual(nsError.domain, RevenueMoreErrorInternal.errorDomain, "NSError domain should match.")
         XCTAssertEqual(nsError.code, error.errorCode, "NSError code should match.")
-        XCTAssertEqual(nsError.userInfo[NSLocalizedDescriptionKey] as? String, "Failed to fetch paywalls", "NSError description should match.")
+        XCTAssertEqual(nsError.userInfo[NSLocalizedDescriptionKey] as? String, "Failed to fetch subscription groups", "NSError description should match.")
     }
 
     func testCustomNSErrorConformance() {

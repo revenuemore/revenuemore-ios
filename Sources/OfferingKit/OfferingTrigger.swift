@@ -1,5 +1,5 @@
-// 
-//  See LICENSE.text for this project’s licensing information.
+//
+//  See LICENSE.text for this project's licensing information.
 //
 //  OfferingTrigger.swift
 //
@@ -10,17 +10,25 @@
 
 import Foundation
 
+// MARK: - OfferingTrigger (Disabled for now)
+// TODO: Re-enable when trigger feature is implemented
+
+/*
 public struct OfferingTrigger {
-    
+
     public let identifier: String
-    
+
     public let offering: Offering?
-    
+
     public let isCurrent: Bool
-    
+
     public init(identifier: String, offering: Offering?, isCurrent: Bool) {
         self.identifier = identifier
         self.offering = offering
         self.isCurrent = isCurrent
     }
 }
+*/
+
+// Placeholder to keep the file for future use
+// When triggers are re-enabled, uncomment the struct above

@@ -35,10 +35,10 @@ internal enum RevenueMoreErrorInternal: Error, Equatable {
     /// Indicates that a product was not found.
     case notFoundProduct
     
-    /// An error that occurs when fetching paywalls.
+    /// An error that occurs when fetching subscription groups.
     ///
-    /// - Parameter message: A string describing the specific issue encountered while fetching paywalls.
-    case fetchPaywalls(_ message: String)
+    /// - Parameter message: A string describing the specific issue encountered while fetching subscription groups.
+    case fetchSubscriptionGroups(_ message: String)
     
     /// StoreKit1 manager was not initialized before use.
     case notInitializedStoreKit1Manager
@@ -136,7 +136,7 @@ extension RevenueMoreErrorInternal: LocalizedError {
             return Localizations.RevenueMoreError.Description.notFoundOffering
         case .notFoundProduct:
             return Localizations.RevenueMoreError.Description.notFoundProduct
-        case .fetchPaywalls(let message):
+        case .fetchSubscriptionGroups(let message):
             return message
         case .notInitializedStoreKit1Manager:
             return Localizations.RevenueMoreError.Description.notInitializedStoreKit1Manager
@@ -188,8 +188,8 @@ extension RevenueMoreErrorInternal: LocalizedError {
             return Localizations.RevenueMoreError.Reason.notFoundOffering
         case .notFoundProduct:
             return Localizations.RevenueMoreError.Reason.notFoundProduct
-        case .fetchPaywalls:
-            return Localizations.RevenueMoreError.Reason.fetchPaywalls
+        case .fetchSubscriptionGroups:
+            return Localizations.RevenueMoreError.Reason.fetchSubscriptionGroups
         case .notInitializedStoreKit1Manager, .notInitializedStoreKit2Manager:
             return Localizations.RevenueMoreError.Reason.notInitializeStoreKitManager
         case .notFoundStoreProduct:
@@ -234,8 +234,8 @@ extension RevenueMoreErrorInternal: LocalizedError {
             return Localizations.RevenueMoreError.RecoverySuggestion.notFoundOffering
         case .notFoundProduct:
             return Localizations.RevenueMoreError.RecoverySuggestion.notFoundProduct
-        case .fetchPaywalls:
-            return Localizations.RevenueMoreError.RecoverySuggestion.fetchPaywalls
+        case .fetchSubscriptionGroups:
+            return Localizations.RevenueMoreError.RecoverySuggestion.fetchSubscriptionGroups
         case .notInitializedStoreKit1Manager, .notInitializedStoreKit2Manager:
             return Localizations.RevenueMoreError.RecoverySuggestion.notInitializedStoreKitManager
         case .notFoundStoreProduct:
@@ -283,7 +283,7 @@ extension RevenueMoreErrorInternal: CustomStringConvertible {
             return Localizations.RevenueMoreError.Description.notFoundOffering
         case .notFoundProduct:
             return Localizations.RevenueMoreError.Description.notFoundProduct
-        case .fetchPaywalls(let message):
+        case .fetchSubscriptionGroups(let message):
             return message
         case .notInitializedStoreKit1Manager:
             return Localizations.RevenueMoreError.Description.notInitializedStoreKit1Manager
@@ -345,7 +345,7 @@ extension RevenueMoreErrorInternal: CustomNSError {
             return 1001
         case .notFoundProduct:
             return 1002
-        case .fetchPaywalls:
+        case .fetchSubscriptionGroups:
             return 1003
         case .notInitializedStoreKit1Manager:
             return 2001

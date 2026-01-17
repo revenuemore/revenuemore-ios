@@ -22,7 +22,7 @@ extension Localizations {
 extension Localizations.RevenueMoreError {
     enum Reason {
         static var fetchEntitlements: String = "error.fetch_entitlements.reason".localized
-        static var fetchPaywalls: String = "error.fetch_paywalls.reason".localized
+        static var fetchSubscriptionGroups: String = "error.fetch_subscription_groups.reason".localized
         static var fetchProductFailed: String = "error.fetch_product_failed.reason".localized
         static var listenPaymentFailed: String = "error.listen_payment_failed.reason".localized
         static var notFoundOffering: String = "error.not_found_offering.reason".localized
@@ -68,7 +68,7 @@ extension Localizations.RevenueMoreError {
 extension Localizations.RevenueMoreError {
     enum RecoverySuggestion {
         static var fetchEntitlements: String = "error.fetch_entitlements.recovery_suggestion".localized
-        static var fetchPaywalls: String = "error.fetch_paywalls.recovery_suggestion".localized
+        static var fetchSubscriptionGroups: String = "error.fetch_subscription_groups.recovery_suggestion".localized
         static var fetchProductFailed: String = "error.fetch_product_failed.recovery_suggestion".localized
         static var listenPaymentFailed: String = "error.listen_payment_failed.recovery_suggestion".localized
         static var notFoundOffering: String = "error.not_found_offering.recovery_suggestion".localized

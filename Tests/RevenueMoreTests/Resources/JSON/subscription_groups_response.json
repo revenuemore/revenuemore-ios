@@ -1,0 +1,49 @@
+{
+  "errors" : {
+
+  },
+  "meta" : {
+    "status" : "success",
+    "code" : 200,
+    "message" : "OK",
+    "language" : "en",
+    "version" : "v1.0.0",
+    "path" : "\/api\/v1\/store\/subscription-groups",
+    "timestamp" : 1732795855
+  },
+  "pagination" : null,
+  "data" : [
+    {
+      "sgi" : "21493747",
+      "gn" : "Unlimited Access",
+      "ic" : true,
+      "p" : [
+        {
+          "id" : "550e8400-e29b-41d4-a716-446655440001",
+          "pi" : "1m_rm_access",
+          "n" : "Monthly Access",
+          "s" : "APPROVED"
+        },
+        {
+          "id" : "550e8400-e29b-41d4-a716-446655440002",
+          "pi" : "6m_rm_access",
+          "n" : "6 Months Access",
+          "s" : "APPROVED"
+        }
+      ]
+    },
+    {
+      "sgi" : "21493748",
+      "gn" : "Black Friday",
+      "ic" : false,
+      "p" : [
+        {
+          "id" : "550e8400-e29b-41d4-a716-446655440003",
+          "pi" : "1m_rm_bf",
+          "n" : "Black Friday Monthly",
+          "s" : "READY_TO_SUBMIT"
+        }
+      ]
+    }
+  ]
+}
