@@ -38,7 +38,7 @@ let package = Package(
             name: "RevenueMoreTests",
             dependencies: ["RevenueMore"],
             resources: [
-                .copy("Resources/JSON/paywalls_response.json"),
+                .copy("Resources/JSON/subscription_groups_response.json"),
                 .copy("Resources/JSON/user_update_success_response.json"),
                 .copy("Resources/JSON/fetch_subscriptions_response.json"),
                 .copy("Resources/StoreConfiguration.storekit")

@@ -141,26 +141,28 @@ public final class RevenueMore: @unchecked Sendable {
 
     /**
      Configures and initializes the ``RevenueMore`` system with the necessary services and managers.
-     
+
      After calling this method, you can safely access ``RevenueMore/shared`` for all functionality.
      If you call ``RevenueMore/shared`` before `start(...)`, it will crash at runtime.
-     
+
      - Parameters:
        - apiKey: A string that authenticates your backend configuration and fetches required resources.
        - userId: An optional string representing the current user's ID; if `nil`, an anonymous user session may be created.
        - forceFinishTransaction: A boolean indicating whether pending StoreKit transactions should be finalized automatically.
        - language: An optional ``Language`` enumeration value to set the app's preferred language.
-     
+       - environment: An optional ``RMEnvironment`` value to specify the backend environment. Defaults to `.production`.
+
      **Example Usage**:
      ```swift
      RevenueMore.start(
        apiKey: "my-secure-api-key",
        userId: "user_1234",
        forceFinishTransaction: true,
-       language: .english
+       language: .english,
+       environment: .production
      )
      ```
-     
+
      **Security Note**:
      Ensure that you pass an **encrypted** `userId` if you are concerned about user privacy or tampering.
      */
@@ -168,8 +170,11 @@ public final class RevenueMore: @unchecked Sendable {
         apiKey: String,
         userId: String? = nil,
         forceFinishTransaction: Bool = false,
-        language: Language? = nil
+        language: Language? = nil,
+        environment: RMEnvironment = .production
     ) {
+        // Set the environment configuration before any network calls
+        EnvironmentConfiguration.shared.setEnvironment(environment)
         // Log a message indicating that the user ID must be encrypted for security purposes
         🐛("You must send the user_id encrypted for your security.")
 
@@ -219,7 +224,7 @@ public final class RevenueMore: @unchecked Sendable {
             return newInstance
         }
 
-        🗣("RevenueMore is configured. apiKey: \(apiKey)")
+        🗣("RevenueMore is configured. apiKey: \(apiKey), environment: \(environment.rawValue)")
     }
 
     // MARK: - Public Instance Methods (Non-Async)

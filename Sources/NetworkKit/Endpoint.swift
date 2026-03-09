@@ -42,7 +42,8 @@ extension Endpoint {
     }
 
     var host: String {
-        return "api.revenuemore.com/api"
+        let env = EnvironmentConfiguration.shared.current
+        return env.host + env.basePath
     }
 
     var apiVersion: String {

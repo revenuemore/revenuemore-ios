@@ -17,12 +17,20 @@ import RevenueMore
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // MARK: - RevenueMore Configuration
+        // For testing with stage environment, use environment: .stage
+        // For production, use environment: .production (default)
         RevenueMore.start(
             apiKey: "xxx-yyy-zzz",
             userId: "rm_test_user_ios",
             forceFinishTransaction: false,
-            language: .english
+            language: .english,
+            environment: .stage
         )
+
+        // Enable debug logging for development
+        RevenueMore.logLevel = .debug
+
         return true
     }
 
