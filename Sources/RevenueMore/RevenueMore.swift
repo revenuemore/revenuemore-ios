@@ -181,7 +181,7 @@ public final class RevenueMore: @unchecked Sendable {
         userManager.setLanguage(language)
         
         let backendConfigurator = BackendConfigurator(apiKey: apiKey, userId: user.userId, userUUID: user.uuid)
-        let paywallsServices = PaywallServices(backendConfigurator: backendConfigurator)
+        let subscriptionGroupServices = SubscriptionGroupServices(backendConfigurator: backendConfigurator)
         let subscriptionsServices = SubscriptionServices(backendConfigurator: backendConfigurator)
         
         let userServices = UserServices(backendConfigurator: backendConfigurator)
@@ -208,7 +208,7 @@ public final class RevenueMore: @unchecked Sendable {
                 userCache: userCache,
                 userManager: userManager,
                 storeKit1Manager: storeKit1Manager,
-                paywallServices: paywallsServices,
+                subscriptionGroupServices: subscriptionGroupServices,
                 subscriptionsServices: subscriptionsServices,
                 receiptManager: receiptManager,
                 entitlementManager: entitlementManager,
@@ -485,23 +485,23 @@ public final class RevenueMore: @unchecked Sendable {
     
     /**
      Initializes a new instance of ``RevenueMore``. Called by `start(...)`.
-     
+
      - Parameters:
        - userCache: An instance of `UserCache` for persisting user data.
        - userManager: A `UserManager` for handling user sessions (logged in or anonymous).
        - storeKit1Manager: A `StoreKit1Manager` responsible for product fetching and purchases on iOS <15.
-       - paywallServices: A `PaywallServices` for fetching and managing paywalls from the backend.
+       - subscriptionGroupServices: A `SubscriptionGroupServices` for fetching subscription groups from the backend.
        - subscriptionsServices: A `SubscriptionServices` for subscription data retrieval and updates.
        - receiptManager: A `ReceiptManager` handling local receipt validation or reading.
        - entitlementManager: An `EntitlementManager` for converting subscription data into user entitlements.
        - backendConfigurator: A `BackendConfigurator` controlling backend connections.
        - forceFinishTransaction: A boolean indicating whether pending StoreKit transactions should be finalized automatically.
-     
+
      **Note**:
      Depending on the platform and OS version, this initializer determines whether
      to use StoreKit1 or StoreKit2 managers. On iOS 15+ (and equivalents), StoreKit2
      managers are used; otherwise, the StoreKit1 path is followed.
-     
+
      **Example**:
      This initializer is called internally by the `start(...)` method and should not be
      called directly in your application code.
@@ -510,7 +510,7 @@ public final class RevenueMore: @unchecked Sendable {
         userCache: UserCache,
         userManager: UserManager,
         storeKit1Manager: StoreKit1Manager,
-        paywallServices: PaywallServices,
+        subscriptionGroupServices: SubscriptionGroupServices,
         subscriptionsServices: SubscriptionServices,
         receiptManager: ReceiptManager,
         entitlementManager: EntitlementManager,
@@ -534,7 +534,7 @@ public final class RevenueMore: @unchecked Sendable {
 
             // Offering Manager
             let offeringManager = OfferingManager(
-                paywallServices: paywallServices,
+                subscriptionGroupServices: subscriptionGroupServices,
                 userManager: userManager,
                 forceFinishTransaction: forceFinishTransaction,
                 storeKitManager: _storeKit2Manager
@@ -560,7 +560,7 @@ public final class RevenueMore: @unchecked Sendable {
             _storeKit2Purchase = nil
 
             let offeringManager = OfferingManager(
-                paywallServices: paywallServices,
+                subscriptionGroupServices: subscriptionGroupServices,
                 userManager: userManager,
                 forceFinishTransaction: forceFinishTransaction,
                 storeKitManager: storeKit1Manager
