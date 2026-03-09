@@ -173,7 +173,8 @@ internal class PurchaseManager: @unchecked Sendable {
                     quantity: quantity
                 )
                 let revenueMorePaymentTransaction = RevenueMorePaymentTransaction(transaction: transaction)
-                self.paymentComplete { paymentResult in
+                let transactionIdentifier = revenueMorePaymentTransaction.transactionIdentifier
+                self.paymentComplete(transactionIdentifier: transactionIdentifier) { paymentResult in
                     switch paymentResult {
                     case .success:
                         completion(.success(revenueMorePaymentTransaction))
@@ -255,7 +256,8 @@ internal class PurchaseManager: @unchecked Sendable {
             switch result {
             case .success(let transaction):
                 let revenueMorePaymentTransaction = RevenueMorePaymentTransaction(transaction: transaction)
-                self?.paymentComplete { paymentResult in
+                let transactionIdentifier = revenueMorePaymentTransaction.transactionIdentifier
+                self?.paymentComplete(transactionIdentifier: transactionIdentifier) { paymentResult in
                     switch paymentResult {
                     case .success:
                         completion(.success(revenueMorePaymentTransaction))
@@ -275,12 +277,16 @@ internal class PurchaseManager: @unchecked Sendable {
     ///
     /// - Parameter completion: A closure returning a `Result<Void, RevenueMoreErrorInternal>` indicating
     ///   if the receipt validation and subscription update succeeded.
-    private func paymentComplete(completion: @escaping @Sendable (Result<Void, RevenueMoreErrorInternal>) -> Void) {
+    private func paymentComplete(
+        transactionIdentifier: String? = nil,
+        completion: @escaping @Sendable (Result<Void, RevenueMoreErrorInternal>) -> Void) {
         receiptManager.generateReceiptString { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let receipt):
-                let request = PaymentComplete.Request(receiptData: receipt)
+                let request = PaymentComplete.Request(
+                    receiptData: receipt,
+                    transactionIdentifier: transactionIdentifier)
                 self.subscriptionsServices.complete(request: request) { result in
                     switch result {
                     case .success:

@@ -93,7 +93,7 @@ You need to fetch your offerings before making a purchase. We offer many feature
         ```swift
         Task {
             do {
-                let products = try await RevenueMore.shared.getOfferings()
+                let offerings = try await RevenueMore.shared.getOfferings()
                 // Offerings have been fetched
             } catch {
                 // Handle the error.

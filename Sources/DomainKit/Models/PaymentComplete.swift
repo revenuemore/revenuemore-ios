@@ -28,10 +28,17 @@ enum PaymentComplete {
         /// - Note: This property is mapped to `"rd"` in the JSON payload
         ///   (see the `CodingKeys` enum).
         let receiptData: String
+        /// Transaction id string required for payment completion.
+        ///
+        /// - Note: This property is mapped to `"ti"` in the JSON payload
+        ///   (see the `CodingKeys` enum).
+        let transactionIdentifier: String?
 
         /// Coding keys used to map the `receiptData` property to `"rd"` in the JSON payload.
+        /// /// Coding keys used to map the `transactionIdentifier` property to `"ti"` in the JSON payload.
         enum CodingKeys: String, CodingKey {
             case receiptData = "rd"
+            case transactionIdentifier = "ti"
         }
     }
 

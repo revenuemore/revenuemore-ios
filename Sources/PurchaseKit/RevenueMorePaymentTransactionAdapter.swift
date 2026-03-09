@@ -45,17 +45,17 @@ internal class RevenueMorePaymentTransactionAdapter: @unchecked Sendable, Revenu
 
     /// A unique identifier for this transaction, if available.
     ///
-    /// Maps to `transaction.id`, converted to a string via `formatted()`.
+    /// Maps to `transaction.id`, converted to a string via `description`.
     var transactionIdentifier: String? {
-        return transaction.id.formatted()
+        return transaction.id.description
     }
     
     /// The identifier of the original transaction, if applicable.
     ///
-    /// Maps to `transaction.originalID`, also converted to a string via `formatted()`.
+    /// Maps to `transaction.originalID`, also converted to a string via `description`.
     /// Useful for subscription renewals or multi-phase purchases.
     var originalTransactionIdentifier: String? {
-        return transaction.originalID.formatted()
+        return transaction.originalID.description
     }
 
     /// The quantity of items purchased in this transaction.
